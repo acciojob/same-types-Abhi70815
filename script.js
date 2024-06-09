@@ -1,15 +1,18 @@
 function isSameType(value1, value2) {
-  //your js code here
-	let v1=typeof(value1);
-	let v2=typeof(value2);
-	if(v1===v2){
-return true;
-	}
-	else{
-return false;
-	} 
+  if (!isNaN(value1) && value1.trim() !== '') {
+    value1 = parseFloat(value1);
 }
 
+if (!isNaN(value2) && value2.trim() !== '') {
+    value2 = parseFloat(value2);
+}
+	  if (isNaN(value1) && isNaN(value2)) {
+        return true;
+    }
+    // Check if the types of both values are the same
+    return typeof value1 === typeof value2;
+}
+ 
 // do not change the code below.
 let value1 = prompt("Enter Start of the Range.");
 let value2 = prompt("Enter End Of the Range.");
