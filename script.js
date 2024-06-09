@@ -1,9 +1,10 @@
 ffunction isSameType(value1, value2) {
-  if (isNaN(value1) && isNaN(value2)) {
+
+function isSameType(value1, value2) {
+  if (Number.isNaN(Number(value1)) && Number.isNaN(Number(value2))) {
     return true;
-  } else {
-    return typeof value1 === typeof value2;
   }
+  return typeof value1 === typeof value2;
 }
 }
  
