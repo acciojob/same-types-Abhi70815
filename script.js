@@ -1,4 +1,4 @@
-ffunction isSameType(value1, value2) {
+function isSameType(value1, value2) {
 
 function isSameType(value1, value2) {
   if (Number.isNaN(Number(value1)) && Number.isNaN(Number(value2))) {
